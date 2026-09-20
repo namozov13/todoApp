@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="lightMode">
+    <div class="container">
+        <div class="titleBox">
+            <h1 class="title">todo</h1>
+            <button class="mode" id="switchMode">
+                <img src="./assets/dark-mode.svg" alt="modeImg">
+            </button>
+        </div>
+
+        <div class="newTodoBox">
+            <form>
+                <label>
+                    <input type="checkbox">
+                    <div class="radioBox"></div>
+                </label>
+                <input autocomplete="off" id="newTodo" maxlength="40" type="text" placeholder="Create a new todo…">
+            </form>
+        </div>
+        <span class="err hidden">Please do not leave this blank or enter a previously written to-do item.</span>
+
+        <div class="todos">
+            <ul class="todolist"></ul>
+
+            <div class="report">
+                <div class="itemsLength">
+                    <span id="itemsLeft">1</span>
+                    <span>items left</span>
+                </div>
+
+                <div class="filter">
+                    <label>
+                        <p>All</p>
+                        <input id="all" type="radio" name="filtertype" checked>
+                    </label>
+                    <label>
+                        <p>Active</p>
+                        <input id="byAct" type="radio" name="filtertype">
+                    </label>
+                    <label>
+                        <p>Completed</p>
+                        <input id="byComp" type="radio" name="filtertype">
+                    </label>
+                </div>
+
+                <button id="clearComp">Clear Completed</button>
+            </div>
+        </div>
+
+        <p class="proTip">Drag and drop to reorder list</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

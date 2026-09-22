@@ -12,6 +12,10 @@
     --backImage: url(./assets/lightBack.svg);
 }
 
+img {
+    user-select: none;
+}
+
 .darkMode {
     --color-text-main: #C8CBE7;
     --color-text-muted: #5B5E7E;
